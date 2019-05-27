@@ -6,3 +6,12 @@ function driversWithRevenueOver(drivers, target){
   })
   return newDrivers;
 }
+
+function driverNamesWithRevenueOver(drivers, target){
+  let newDrivers = drivers.filter(function(drvr){
+    return drvr.revenue > target;
+  });
+  newDrivers.map(function(drvr){
+    return drvr.name;
+  });
+}
