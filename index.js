@@ -22,5 +22,5 @@ function exactMatch(drivers, keyValue){
       drivers[key] === keyValue[key];
     }
   })
-  return newDrivers;
+  return newDriver;
 }
