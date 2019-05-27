@@ -25,8 +25,8 @@ function exactMatch(drivers, keyValue){
   return newDrivers;
 }
 
-function exactMatchToList(drivers, "name"){
-  let newDrivers = exactMatch(drivers);
+function exactMatchToList(drivers){
+  let newDrivers = exactMatch(drivers, "name");
   return newDrivers.map(function(driver){
     return driver.name;
   })
